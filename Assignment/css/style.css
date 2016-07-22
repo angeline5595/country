@@ -1,0 +1,43 @@
+.container_12{
+	background:#BDB76B	;
+	bottom:200px;
+}
+
+nav li {
+display:inline;
+}
+header{
+	background:#556B2F;
+	top: 0px;
+	bottom: 550px;
+	height: 80px;
+	width: 960px;
+	}
+h2{
+ background: url(img/1.jpg) no-repeat;
+ text-indent: -9999px;
+ width:270px;
+ height:320px;
+ 
+}
+h3
+{
+background: url(img/2.jpg) no-repeat;
+ text-indent: -9999px;
+ width:290px;
+ height:320px;
+
+}
+h4
+{
+background: url(img/3.jpg) no-repeat;
+ text-indent: -9999px;
+ width:270px;
+ height:320px;
+
+}
+
+ul a:hover
+{
+color:black;
+}
