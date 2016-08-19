@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="includes/css/style.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="navbar navbar-inverse navbar-fixed-top" id="header">
+            <div class="container">
+                <button class="navbar-toggle" data-target="#view" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1>Student Profile</h1>
+                <div class=" collapse navbar-collapse " id="view">
+                    <form class="navbar-form pull-left">
+                        <input type="text" class="form-control" placeholder="   Type here  ..." id="search">
+                        <button type="button" class="btn btn-primary responsive-width " id="searchb"><span class="glyphicon glyphicon-search"></span><strong>Search</strong>
+                        </button>
+                        <button type="button" class="btn btn-primary responsive-width" id="rebtn"><strong>load </strong><span class="glyphicon glyphicon-repeat"></span>
+                        </button>
+                        <button type="button" class="btn btn-primary responsive-width " data-toggle="modal" data-target="#myModal" id="add"><strong>Add</strong><span class="glyphicon glyphicon-plus"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog ">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Student Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" id="addForm">
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="name">Name </label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" type="text" name="name" id="name" pattern="[a-zA-Z]+" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputName">Age </label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" type="number" min="20" max="40" name="age" id="age" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputName">Gender </label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="gender" type="text" name="gender" id="gender" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-lg-2 control-label">Phone no[Format:xxx-xxx-xxxx] </label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" type="tel" id="phone" pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputName">course </label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="course" type="text" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputName">
+                                    Email </label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" type="email" name="email" id="email" required/>
+                                </div>
+                            </div>
+                            <button  type="submit" class="btn btn-submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--model -->
+        <div class="table-responsive" id="results1">
+            <table class="table" id="results">
+                <template id="temp">
+                    <tr>
+                        <td> {{ id}} </td>
+                        <td>
+                            <span class="noedit na">{{ name }} </span>
+                            <input class="edit name">
+                        </td>
+                        <td>
+                            <span class="noedit ge">{{ gender }} </span>
+                            <input class="edit gender"> </td>
+                        <td>
+                            <span class="noedit ag"> {{ age }} </span>
+                            <input class="edit age">
+                        </td>
+                        <td>
+                            <span class="noedit ph"> {{ phone }} </span>
+                            <input class="edit phone">
+                        </td>
+                        <td>
+                            <span class="noedit co"> {{ Course }}
+                            </span>
+                            <input class="edit Course">
+                        </td>
+                        <td>
+                            <span class="noedit em">{{ email }}</span>
+                            <input class="edit Email">
+                        </td>
+                        <td>
+                            <button type="submit" data-id="{{id}}" class="btn btn-danger  noedit remove" id="debtn">delete</button>
+                            <button type="submit" class="btn btn-primary edit cancel" id="cancel">Cancel </button>
+                        </td>
+                        <td>
+                            <button type="submit" data-id="{{id }}" class="btn btn-info noedit update" id="update">Update</button>
+                            <button type="submit" data-id="{{id }}" class="btn btn-success edit " id="save">Save </button>
+                        </td>
+                    </tr>
+                </template>
+            </table>
+        </div>
+        <div class="pages" id="pagesdiv">
+            <button class="btn btn-primary pull-left" id="prev">Previous</button>
+            <button class="btn btn-primary pull-right" id="next">Next</button>
+        </div>
+    </div>
+</body>
+<script src="includes/js/jquery-3.1.0.js"></script>
+<script src="includes/js/profilequery.js"></script>
+<script src="includes/js/Mustache.js"></script>
+
+</html>

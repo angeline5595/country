@@ -1,0 +1,45 @@
+
+
+.space {
+    height: 113px;
+    width: 1360px;
+    background-color: white;
+}
+
+
+#search {
+    width: 400px;
+}
+
+th
+{
+    background-color:   black;
+    color:white;
+    height: 50px;
+    text-align: "center";
+}
+tr
+{
+    background-color: "#808080";
+}
+
+h1
+{
+    font-family: arial;
+    
+    color: white;
+    text-align: center;
+}
+tr td .edit
+{
+  display: none; 
+}
+tr td.edit .edit
+{
+    display: initial;
+}
+
+tr td.edit .noedit
+{
+    display: none;
+}
