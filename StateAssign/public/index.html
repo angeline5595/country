@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="includes/css/styles.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="navbar navbar-fixed-top" id="header">
+            <div class="container">
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <h1 class=" nav navbar-nav" id="Title">
+                    Search States
+                </h1>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+        </div>
+        <div class="container">
+            <div class="row" id="search">
+                <div class="col-12">
+                    <h3> You can search here</h3>
+                    <p>Name of the Country :
+                        <!-- <input type="text" id="Name">
+                 -->
+                        <select id="select">
+                            <option>INDIA</option>
+                            <option>JAPAN</option>
+                            <option>AMERICA</option>
+                            <option>AUSTRALIA</option>
+                            <option>CHINA</option>
+                            <option>BANGLADESH</option>
+                            <option>MALAYSIA</option>
+                            <option>NEPAL</option>
+                            <option>CANADA</option>
+                            <option>ITALY</option>
+                        </select>
+                    </p>
+                    <button href="#" target="_blank" class="btn btn-info" id="searchbtn" onclick="myFunction()">search</button>
+                </div>
+            </div>
+            <div class="row" id="detailsSection">
+                <div class="col-12">
+                    <p><b id="b"></b> </p>
+                    <p id="two"> </p>
+                </div>
+            </div>
+        </div>
+        <script src="includes/js/jquery-3.1.0.js"></script>
+        <script src="includes/js/cityQuery1.js"></script>
+</body>
+
+</html>

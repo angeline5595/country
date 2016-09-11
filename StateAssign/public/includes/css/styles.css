@@ -1,0 +1,34 @@
+
+#header
+{	
+	position:fixed;
+	color:white;
+	background-color: black;
+
+
+}
+.space {
+    height: 40px;
+    width: 1360px;
+    background-color: white;
+}
+#search,#detailsSection
+{
+	background-color:  	#F0F8FF;
+}
+#Title
+{
+	font-family:arial;
+	padding -left: 20px;
+	letter-spacing: 1px;
+	color:white;
+	text-align: center;
+	
+}
+#inputMessage
+{
+ width:100%;
+}
+
+
+
