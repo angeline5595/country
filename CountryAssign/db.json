@@ -1,0 +1,45 @@
+{
+  "countrydata": [
+    {
+      "name": "JAPAN",
+      "states": "Tōkyō ,Kanagawa ,Ōsaka,Aichi,Chiba,Hyōgo,Saitama,Hokkaidō ,Fukuoka,Shizuoka ,Hiroshima,Kyōto,Ibaraki,Miyagi ,Niigata,Tochigi,Nagano ,Okayama,Gumma,Mie,Fukushima,Gifu ,Yamaguchi,Kagoshima,Kumamoto ,Ehime,Nagasaki ,Okinawa,Aomori ,Nara ,Yamagata ,Ishikawa ,Ōita ,Iwate,Shiga,Toyama ,Miyazaki ,Akita,Wakayama ,Fukui,Kagawa ,Tokushima,Saga ,Kōchi,Shimane,Yamanashi,Tottori"
+    },
+    {
+      "name": "INDIA",
+      "states": "Andhra Pradesh,Arunachal Pradesh,Assam,Bihar,Chandigarh,Chhattisgarh,Gujarat,Haryana,Himachal Pradesh,Jammu and Kashmir,Jharkhand,Karnataka,Kerala,Madhya Pradesh,Maharashtra,Mumbai,Manipur,Odisha,Punjab,Rajasthan,Sikkim,Tamil Nadu,Telangana,Hyderabad,Uttar Pradesh,Goa,Uttarakhand,West Bengal"
+    },
+    {
+      "name": "AMERICA",
+      "states": "Alabama,Alaska,Arizona,Arkansas,California,Colorado,Connecticut,Delaware,Florida,Georgia,Hawaii,Idaho,Illinois,Indiana,Iowa,Kansas,Kentucky,Louisiana,Maine,Maryland,Massachusetts,Michigan,Minnesota,Mississippi,Missouri,Montana Nebraska,Nevada,New Hampshire,New Jersey,New Mexico,New York,North Carolina,North Dakota,Ohio,Oklahoma,Oregon,Pennsylvania Rhode Island,South Carolina,South Dakota,Tennessee,Texas,Utah,Vermont,Virginia,Washington,West Virginia ,Wisconsin ,Wyoming"
+    },
+    {
+      "name": "AUSTRALIA",
+      "states": "New South Wales,Victoria,Queensland,Western Australia,South Australia,Tasmania,Australian Capital Territory,Northern Territory"
+    },
+    {
+      "name": "CHINA",
+      "states": "Guangdong ,Liaoning ,Shanghai ,Jiangsu,Shandong ,Heilongjiang ,Hubei,Henan,Hebei,Jilin,Sichuan,Beijing,Anhui,Zhejiang ,Hunan,Shaanxi,Shanxi ,Chongqing,Tianjin,Xinjiang ,Jiangxi,Fujian ,Guangxi,Nei Mongol ,Guizhou,Gansu,Yunnan ,Hainan ,Ningxia,Qinghai,Xizang"
+    },
+    {
+      "name": "BANGLADESH",
+      "states":"Bogra,Mymensingh,Jessore,Dinajpur,Chapai Nawabganj,Brahmanbaria,Tangail,Feni,Sirajganj,Pabna,Jamalpur,Faridpur,Cox's Bazar,Noakhali,Noakhali,Kushtia"
+    }, 
+    {
+      "name": "MALAYSIA",
+      "states":"Federal Territory of Kuala Lumpur,Klang Valley,Federal Territory of Labuan Victoria,Putrajaya,Johor Bahru,Kedah,Alor Setar,Kelantan,Kota Bharu,Malacca Town,Negeri,Sembilan,Seremban,Pahang,Kuantan,Perak,Ipoh,Perlis,Kangar,George Town,Penang,Sabah,Kota,Kinabalu,Sarawak,Kuching,Selangor,Shah Alam,Klang Valley,Terengganu"
+    },  
+    {
+      "name": "NEPAL",
+      "states":"Kailali, Kanchanpur, Doti, Achhan, Bajura, Dadeldhura, Bajhang, Baitadi, Darchula, Humla, Dolpa, Mugu, Kalikot, Jumla, Dailekh, Surkhet and Jajarkot"
+    }, 
+    {
+      "name": "CANADA",
+      "states":"British Columbia, Alberta, Manitoba, Ontario, Prince Edward Island, Newfoundland, Saskatchewan, New Brunswick, Quebec and Nova Scotia"
+    },
+    {
+      "name": "ITALY",
+      "states":"Rome,Milan,Naples,Turin,Venice-Padua,Florence,Bari,Palermo,Catania,Brescia,Genoa,Messina-Reggio,Calabria,Rimini,Bologna,Modena,Verona,Pisa-Livorno,Pescara,Versilia,Vicenza,Cagliari,Taranto,Trieste,Ancona,Perugia,Lecce,Reggio nell'Emilia,Parma"
+    }
+
+  ]
+}
